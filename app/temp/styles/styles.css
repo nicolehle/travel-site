@@ -993,8 +993,10 @@ a {
         margin-bottom: 0;
     }
 
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp. Instead edit gulp/templates/sprite */
+
 .icon {
-            background-image: url('/temp/sprite/css/sprite-69f19c2e.svg');
+            background-image: url('/temp/sprite/css/svg/sprite-69f19c2e.svg');
         }
 
 .icon--clear-view-escapes {
@@ -1067,4 +1069,26 @@ a {
         width: 34.75px;
         height: 42px;
         background-postion: 36.69752421959096% 45.792307692307695%;
+    }
+
+.site-footer {
+    background-color: #2f5572;
+    color: #FFF;
+    padding: .5rem;
+    text-align: center;
+}
+
+.site-footer__text {
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 200;
+    }
+
+@media (min-width: 530px) {
+
+.site-footer__text {
+            display: inline;
+            margin-right: 1.4rem;
+            margin-bottom: 0
+    }
     }
